@@ -1,0 +1,160 @@
+.image-area
+{
+    text-align: center;
+    padding: 20px;
+    /*top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;*/
+}
+
+.img-wrapper
+{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    /*border-radius: 15px;*/
+    box-shadow: 2px 2px 5px aquamarine;
+}
+
+.img-wrapper:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 180%;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,.3);
+    z-index: 1;
+    transform: skew(45deg);
+    transition: .5s;
+}
+
+.img-wrapper:before
+{
+    left: -180%;
+}
+
+.img-wrapper img
+{
+    height: 400px;
+    width: 300px;
+    filter: grayscale(100%);
+    transition: 2s;
+}
+.img-wrapper img
+{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.img-wrapper h5
+{
+    background: aquamarine;
+    font-family: Poppins;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: right;
+    transition: 1s;
+}
+
+.img-wrapper h5
+{
+    transform: perspective(400px) rotateY(0deg);
+}
+
+.img-wrapper ul
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li
+{
+    background: #333;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    transform: perspective(800px) rotateY(90deg);
+    transition: .5s;
+    transform-origin: left;
+}
+
+.img-wrapper ul li
+{
+    transform: perspective(800px) rotateY(0deg);
+}
+
+.img-wrapper ul li:nth-child(1)
+{
+    transition-delay: .2s;
+}
+
+.img-wrapper ul li:nth-child(2)
+{
+    transition-delay: .6s;
+}
+
+.img-wrapper ul li:nth-child(3)
+{
+    transition-delay: .8s;
+}
+
+.img-wrapper ul li:nth-child(4)
+{
+    transition-delay: 1s;
+}
+
+.img-wrapper ul li a
+{
+    color: aquamarine;
+    background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li i.team-info
+{       
+    color: aquamarine;
+    background: rgba(255,255,255,0);
+}
+
+.img-wrapper ul li i.team-info:hover
+{
+    color: #fff;
+    background: rgba(255,255,255,0);
+}
+
+h1.teams {
+    text-align: center;
+    padding: 20px;
+    font-size: 60px;
+    font-family: 'Slabo 27px', serif;
+}
+
+h5 {
+    font-family: 'Slabo 27px', serif!important;
+}
+
+div.col-md-3 {
+    padding: 20px
+}
+
+div#page-manuals {
+    background: url("../images/team-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
