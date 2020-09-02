@@ -328,7 +328,7 @@ html.js,
 }
 
 h1.name {
-	font-size: 4.5rem;
+	font-size: 3.8rem;
 	text-align: center;
 	justify-content: center;
 	margin: 0 auto;
@@ -340,7 +340,7 @@ h1.name {
 p#vit {
 	text-align: center;
 	padding: 10px;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 div.head {
